@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{margin: 0 auto;}
+        header{
+            margin: 10px 0;
+        }
+        .thematic-divider{
+            height: 1px;
+            background-color: #ddd;
+            margin: 10px 0;
+        }
+        .kung-fu-form label {
+            display: block;
+            margin-top: 5px;
+        }
+        .kung-fu-form h3{
+            margin: 0;
+        }
+        .submit {
+            display: block;
+            margin-top:15px;
+            margin-left: 0;
+        }
+        .textarea{
+            resize: none;
+        }
+
+
+    </style>
 </head>
 <body>
     <header>
+        <div class="thematic-divider"></div>
         <nav aria-label="primary navigation">
             <form action="" role="search">
             <label for="search">search your image here</label>
@@ -16,9 +45,33 @@
         </nav>
     </header>
     <main>
-            <div class="kung-fu-image">
-                <img src="" alt="kung fu panda">
-            </div>
+           <figure>
+            <img src="images/kung fu panda2.webp" alt="kung fu panda">
+                <figcaption>
+                    <a href="https://www.bing.com/images/search?view=detailV2&ccid=Wbdxkcwk&id=B0215677F64B11BDC43668AC945190954C681ACD&thid=OIP.WbdxkcwkWLUBEmzbbg45bAHaFj&mediaurl=https%3a%2f%2fcdn.wallpapersafari.com%2f83%2f80%2fzIZoFP.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.59b77191cc2458b501126cdb6e0e396c%3frik%3dzRpoTJWQUZSsaA%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1600&q=kung+fu+panda+free+download+jpg&FORM=IRPRST&ck=81A124EE4D555CF2A4735DAB783D9D34&selectedIndex=3&itb=0&qft=+filterui%3aphoto-photo" target="_blank" rel="noopener"> For more click here</a>
+                </figcaption>
+           </figure>
+        <hr style="margin:10px;">
+           <section class="kung-fu-form">
+            <h3>Feedback Form</h3>
+            <form >
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+
+                    <label for="comment">Comment:</label>
+                    <textarea rows="3" cols="40" id="comment" placeholder="Leave your comment here" class="textarea"></textarea>
+
+                     <button type="submit" class="submit">Submit</button>    
+           </form>
+           </section>
+
+           
+
+                
+            
         
     
     </main>     

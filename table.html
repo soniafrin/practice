@@ -3,26 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table Practice</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            
+        }
+        th, td, tr {
+            border: 1px solid blueviolet;
+            padding: 10px;
+        }
+    </style>
+
 </head>
 <body>
-    <table>
+    <!-- table caption -->
+     <table>
+        <colgroup>
+            <col style="background-color: aquamarine;" span="2">
+            
+            <!-- <col style="background-color: antiquewhite;"> -->
+        </colgroup>
            <caption>Popcoffs popcorn details</caption>
-            <tr>
+                <tr>
                 <th>popcorn flavours</th>
                 <th>ingridients</th>
                 <th>expire date</th>
-            </tr>
-            <tr>
-                <td>Pistachio</td>
-                <td>pistachio, food color, butter</td>
-                <td>2 days</td>
-            </tr>
-            <tr>
-                <td>Dark Orange</td>
-                <td>orange flavour, dark chocolotet</td>
-                <td> 7 days</td>
-            </tr>
+                </tr>
+ 
+                <tr>
+                    <td>Pistachio</td>
+                    <td>pistachio, food color, butter</td>
+                    <td>2 days</td>
+                </tr>
+                <tr>
+                    <td>Dark Orange</td>
+                    <td>orange flavour, dark chocolotet</td>
+                    <td> 7 days</td>
+                </tr>
+                <tr>
+                    <td>Ingridients we need</td>
+                    <td colspan="2">pistachio, food color, butterorange flavour, dark chocolotet</td>
+                </tr>
+        </table>
+<br>
+    <!-- table structure -->
+    <table>
+           <caption>Popcoffs popcorn details</caption>
+            <thead>
+                <tr>
+                <th>popcorn flavours</th>
+                <th>ingridients</th>
+                <th>expire date</th>
+                </tr>
+            </thead>
+            <tbody>   
+                <tr>
+                    <td>Pistachio</td>
+                    <td>pistachio, food color, butter</td>
+                    <td>2 days</td>
+                </tr>
+                <tr>
+                    <td>Dark Orange</td>
+                    <td>orange flavour, dark chocolotet</td>
+                    <td> 7 days</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Ingridients we need</td>
+                    <td colspan="2">pistachio, food color, butterorange flavour, dark chocolotet</td>
+                </tr>
+            </tfoot>
+        </table>
+<br>
+        <!-- nesting table -->
+        <table>
+           <caption>Popcoffs popcorn details</caption>
+            <thead>
+                <tr>
+                <th>popcorn flavours</th>
+                <th>ingridients</th>
+                <th>expire date</th>
+                </tr>
+            </thead>
+            <tbody>   
+                <tr>
+                    <td>Pistachio</td>
+                    <td>pistachio, food color, butter</td>
+                    <td>2 days</td>
+                </tr>
+                <tr>
+                    <td>Dark Orange</td>
+                    <td>orange flavour, dark chocolotet</td>
+                    <td> 7 days</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                        <tr>
+                            <td>peri pei tomato</td>
+                            <td>spicy lemon zest</td>
+                        </tr>
+                        <tr>
+                            <td>peri pei tomato</td>
+                            <td>spicy lemon zest</td>
+                        </tr>
+                        </table>
+                    </td>
+                    <td>tomato n chili infused oil, peri peri spice, lemon</td>
+                    <td> 5 days</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Ingridients we need</td>
+                    <td colspan="2">pistachio, food color, butterorange flavour, dark chocolotet, tomato n chili infused oil, peri peri spice, lemon</td>
+                </tr>
+            </tfoot>
         </table>
 </body>
 </html>

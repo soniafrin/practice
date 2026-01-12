@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/pseuso.css">
+</head>
+<body>
+<!-- task 1 -->
+    <section id="task1">
+        <h1>Task 1: Interaction States</h1>
+
+    <nav>
+        <a href="">Home</a>
+        <a href="">about</a>
+    </nav>
+
+    <div>
+        <button>click me</button>
+        <button>Submit</button>
+    </div>
+    </section>
+
+    <!-- task 2 -->
+    <section id="task2">
+        <h2>Task2: Form States</h2>
+
+        <form action="">
+            <label for="name">Name - reqired</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mail">Email -reqired</label>
+            <input type="text" id="mail" name="mail" required>
+
+            <label for="comment">comments - optional</label>
+            <textarea name="comment" id="comment"></textarea>
+
+            <label for="">
+                <input type="checkbox" name="subscribe" id="">
+                <span>subscribe my newsletter</span>
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="consultation">or book a consultion
+            </label>
+
+            <label for="disabled-input">Disbaled field:</label>
+            <input type="text" id="disabled-input" disabled>
+
+            <button type="submit">Submit</button>
+
+
+        
+
+        </form>
+    </section>
+
+    <!-- task 3 -->
+    <section id="task3">
+        <h2>Task3: Structural Pseudo-classes</h2>
+<!-- list example -->
+        <ul>
+            <li>apple</li>
+            <li>komla</li>
+            <li>lebu</li>
+            <li>ata</li>
+            <li>kathal</li>
+            <li>mango</li>
+            <li>pulm</li>
+        </ul>
+
+        <!-- mixed element -->
+
+        <div class="mixed">
+            <p>paragraph1</p>
+            <h3>Heading 1</h3>
+            <p>paragraph 2</p>
+            <p>paragraph3</p>
+        </div>
+
+        <!-- only child example -->
+         <div class="single">
+            <p>i am the only child</p>
+         </div>
+    </section>
+
+    <!-- task 4 -->
+     <section id="task4">
+        <h2>task4: Negation and Grouping Pseudo-classes</h2>
+        <div>
+        <button>Primary</button>
+        <button>Secondary</button>
+        <button>Danger</button>
+        </div>
+     </section>
+
+     <!-- task5 - content and language pseudo class -->
+      <section id="task5">
+        <h2>Task5: content and language pseudo class</h2>
+
+        <p lang="en">Helllo this is the english text here</p>
+        <p lang="es">¡Hola! Este es un texto en español.</p>
+        <p lang="fr">Bonjour! Ceci est un texte français.</p>
+
+        <div class="empty-box"></div>
+
+        <div class="not-empty-box">I have content here</div>
+
+        <p class="pseudo-example">This Paragraph will have Symbols</p>
+
+      </section>
+
+      <!-- task6 - content aware card -->
+
+      <section id="task6">
+        <h2>Task6: Content-aware cards</h2>
+
+        <div class="card">
+            <img src="/images/kung fu panda.webp" alt="">
+            <h3>Card with Image</h3>
+            <p>This card contains an image.</p>
+        </div>
+        <div class="card">
+             <h3>Card without Image</h3>
+            <p>This card has no image.</p>
+        </div>
+
+        <div class="card">
+            <img src="/images/kung fu panda2.webp" alt="">
+            <h3>Another Image card</h3>
+            <p>Image included here</p>
+        </div>
+      </section>
+
+      <!-- task7: combination challenge - pricing table -->
+      <section id="task7">
+        <h2>Task 7: Pricing Table</h2>
+        <div class="pricing-table">
+            <div class="plan">
+                <h3>Basic</h3>
+                <p>£9 / month</p>
+                <button>Choose Plan</button>
+            </div>
+            <div class="plan">
+                <h3>Pro</h3>
+                <p>£19 / month</p>
+                <button>Choose plane</button>
+            </div>
+            <div class="plan">
+                <h3>Enterprice</h3>
+                <p>£19 / month</p>
+                <button disabled>Choose plane</button>
+            </div>
+        </div>
+
+
+      </section>
+
+    
+</body>
+</html>

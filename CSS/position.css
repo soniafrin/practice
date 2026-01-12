@@ -1,0 +1,108 @@
+#pos1 .box{
+    width: 120px;
+    height: 80px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid rebeccapurple;
+
+}
+
+#pos1 .static-box{
+    position: static;
+    top:20px;
+}
+#pos1 .relative-box{
+    position: relative;
+    top:-20px;
+    left: 30px;
+}
+
+/* Task2 - absolute positioning */
+
+#pos2{
+    border: 2px solid rebeccapurple;
+    background-color:lightgreen;
+}
+#pos2 .container{
+   
+    position: relative;
+}
+
+#pos2 .absolute-box{
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: salmon;
+    position: absolute;
+    top:20px;
+    right: 50px;
+}
+
+/* task3 - fixed positioning */
+#pos3 .content{
+    border: 1px solid rebeccapurple;
+    height: 600px;
+}
+
+#pos3 .fixed-box{
+    width: 120px;
+    height: 60px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    /* top: 20px; */
+    right: 20px;
+    bottom: 50px;
+}
+/* task4 sticky positioning */
+#pos4 .wrapper{
+    border: 2px solid blue;
+    height: 500px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+#pos4 .sticky-title{
+    background-color: lightyellow;
+    border-bottom: 2px solid #aaa;
+    padding: 8px;
+    position: sticky;
+    top: 10px;
+}
+/* task5- Z-index positioning and stacking context */
+#pos5{
+    border: 1px solid orangered;
+    height: 200px;
+    margin-top: 20px;
+
+    
+}
+#pos5 .box{
+    width: 120px;
+    height: 120px;
+    color: white;
+    line-height: 120px;
+    border: 1px solid lightblue;
+    text-align: center;
+    position: relative;
+}
+#pos5 .red{
+    background-color: red;
+    /* z-index: 1; */
+    top: -50px;
+    
+}
+#pos5 .blue{
+    background-color: blue;
+    z-index: 2;
+    
+}
+#pos5 .green{
+    background-color: green;
+    /* z-index: 3; */
+}

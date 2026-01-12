@@ -1,0 +1,234 @@
+/* link */
+#task1 a{
+    text-decoration: none;
+    color: blue;
+    padding: 5px 10px;
+}
+
+#task1 a:hover{
+    color: white;
+    background-color: blue;
+}
+#task1 a:focus{
+    outline: 3px solid orange;
+}
+#task1 a:focus-visible{
+    outline: 3px solid red;
+}
+
+/* button */
+#task1 button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+#task1 button:hover{
+    background-color: lightblue;
+}
+#task1 button:active{
+    background-color: blue;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+#task1 button:focus{
+    outline: 3px solid orange;
+}
+#task1 button:focus-visible{
+    outline: 3px solid red;
+}
+
+/* task2 */
+#task2 input, #task2 textarea{
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+#task2 input:required, #task2 textarea:required{
+    border-color: darkblue;
+}
+
+#task2 input:optional, #task2 textarea:optional{
+    border-color:violet;
+}
+#task2 input:valid{
+    border-color: green;
+}
+#task2 input:invalid{
+    border-color:tomato;
+}
+
+#task2 input:disabled{
+    background-color: yellow;
+    cursor: not-allowed;
+}
+
+#task2 input[type="checkbox"]:checked + span {
+    font-weight: bolder;
+    color: blue;
+
+}
+#task2 form:focus-within{
+    background-color: #f0f8ff;
+}
+
+/* css with structural pseudo-class */
+#task3 ul li:first-child{
+    color: red;
+    font-weight: bold;
+}
+
+#task3 ul li:last-child{
+    color: blue;
+    font-style: italic;
+}
+
+#task3 ul li:nth-child(2n){
+    background-color: antiquewhite;
+
+}
+
+#task3 ul li:nth-child(2n+1){
+    border: 1px solid green;
+}
+
+#task3 .mixed p:nth-of-type(1){
+    color: green;
+    font-weight: bold;
+}
+#task3 .mixed p:last-of-type{
+    color: purple;
+    font-size: 1.5em;
+}
+
+#task3 .single p:only-child{
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* negation and grouping pseudo class */
+#task4 button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#task4 button:not(:first-child){
+    background-color: lightgray;
+    color: black;
+}
+
+#task4 button:is(:hover, :focus){
+    background-color: lightblue;
+    outline: 2px solid orange;
+}
+
+#task4 button:where(:hover){
+    font-weight: normal;
+}
+
+/* content and language pseudo class */
+
+#task5 p:lang(en){
+    color: blue;
+}
+#task5 p:lang(es){
+    color: green;
+}
+
+#task5 p:lang(fr){
+    color: red;
+}
+
+#task5 .empty-box:empty{
+    background-color: yellow;
+    border: 2px dashed orange;
+    padding: 20px;
+}
+
+#task5 .empty-box:empty:hover{
+
+background-color: orange;
+    border: 2px dashed yellow;
+    padding: 40px;
+}
+
+#task5 .pseudo-example::before{
+    content: "fuckYou";
+    color: gold;
+}
+
+#task5 .pseudo-example::after {
+    content: " ★";
+    color: gold;
+}
+
+/* task6 content aware card */
+#task6 .card{
+    border: 2px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+#task6 .card:has(img){
+    border-color: green;
+    background-color: #f0fff4;
+}
+
+#task6 .card:not(:has(img)){
+    border-style: dashed;
+    background-color: #f8f8f8;
+    color: #777;
+}
+
+#task6 .card:not(:has(img))::before{
+    content: "no image available";
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+
+}
+
+/* task7- combimation challenge- pricing table */
+
+#task7 .pricing-table{
+    display: flex;
+    gap: 16px;
+}
+
+#task7 .plan{
+    border:2px solid #ccc ;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.50s, border-color 0.50s;
+}
+
+#task7 .plan:nth-child(2){
+    border-color: gold;
+    background-color: #fffbe6;
+}
+#task7 .plan:nth-child(2):hover{
+    background-color: yellowgreen;
+}
+
+#task7 .plan:hover{
+    transform: scale(1.05);
+    border-color: black;
+}
+
+#task7 .plan:focus-within{
+    outline: 3px solid blue;
+}
+
+#task7 .plan:has(button:disabled){
+    opacity: 0.5;
+    pointer-events: none;
+}

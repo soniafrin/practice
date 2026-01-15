@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .div{
+            border: 1px solid rebeccapurple;
+        }
+        .spacer{
+            flex-grow: 1;
+        }
+        .container2{
+            display: flex;
+            .a{
+                order: 2;
+            }
+            .b{
+                /* visibility: hidden; */
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="logo div">Logo</div>
+  <div class="spacer div"></div>
+  <div class="menu div">Menu</div>
+</div>
+
+<div class="container2">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+</div>
+
+
+
+    
+</body>
+</html>

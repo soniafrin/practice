@@ -1,0 +1,35 @@
+.image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 150px);
+    gap: 5px;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.img{
+    border: 2px solid red;
+    /* grid-column: 2 span;
+   grid-row: 2 span; */
+
+}
+
+.giant-img{
+   grid-column: 6 span;
+   grid-row: 2 span;
+}
+.ordinary-img{
+   grid-column: 2 span;
+   grid-row: 2 span;
+}
+.rectangular-img{
+   grid-column: 2 span;
+}
+/* .ordinary-img{
+   grid-column: 2 span;
+   grid-row: 2 span;
+} */
+ 

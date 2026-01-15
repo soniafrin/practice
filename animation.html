@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Trasform and Translate</title>
+    <style>
+        section{
+            display: flex;
+        }
+        .container, .inner{
+            height: 200px;
+            width: 200px;
+            background-color: lightgreen;
+            border: 1px solid rebeccapurple;
+        }
+        .inner{
+            background-color: lightcoral;
+            border: 1px solid red;
+            transform: scale(0.5) rotate(45deg);
+            transition: transform 1s ease-in-out, background-color 3s ease-out;
+
+        }
+        .inner:hover{
+            background-color: red;
+            transform: translateX(200px) scale(1) rotate(60deg);
+            /* transition: transform 1s ease-in-out, background-color 3s ease-out; */
+        }
+        #cricket{
+            margin: 20px auto;
+            border: 2px solid rebeccapurple;
+            
+        }
+        .bat{
+            transition: transform 0.1s ease-in 0.2s;
+        }
+        #cricket:hover .bat{
+            transform: translateX(200px) rotate(-60deg);
+            
+            /* transform-origin: top right; */
+        }
+        
+        .ball{
+            background-color: green;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: relative;
+            left: 1100px;
+            bottom: 390px;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            transition: transform 0.4s, background-color 0.1s 0.3s ;
+            /* display: inline; */
+        }
+        .ball2{
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: relative;
+            left: 454px;
+            bottom: 90px;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            transition: transform 0.4s 0.4s, background-color 0.1s 0.3s;
+
+        }
+
+        #cricket:hover .ball{
+            transform: translate(-644px, 350px) rotate(360deg);
+            background-color: white;
+        }
+        #cricket:hover .ball2{
+            transform: translate(640px, -350px) rotate(360deg);
+            background-color: green;
+        }
+    
+    </style>
+</head>
+<body>
+    <section>   
+        <div class="container">container 1
+        <div class="inner">inner 1</div>
+    </div>
+    <div class="container">container 2
+        <div class="inner">inner 2</div>
+    </div>
+    <div class="container">container 3
+        <div class="inner">inner 3</div>
+    </div>
+    </section>
+
+    <div id="cricket">
+        <img src="/css3-features/images/bat.png" alt="" class="bat">
+        <div class="ball">ball</div>
+        <div class="ball2">ball</div>
+
+    </div>
+
+    
+</body>
+</html>
